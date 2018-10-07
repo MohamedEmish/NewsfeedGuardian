@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < feeds.length; i++) {
             feeds[i] = adapter.getItem(i);
         }
-        outState.putParcelableArray(SEARCH_RESULTS, (Parcelable[]) feeds);
+        outState.putParcelableArray(SEARCH_RESULTS,feeds);
     }
 
     private class FeedAsyncTask extends AsyncTask<URL, Void, List<Feed>> {
